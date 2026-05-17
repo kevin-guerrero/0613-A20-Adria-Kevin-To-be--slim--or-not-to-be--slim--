@@ -43,3 +43,4 @@ Accedeix a [http://localhost:8000](http://localhost:8000).
 
 ## Vídeo de demostració
 
+https://github.com/user-attachments/assets/c5bf1c31-2ac3-488d-bd0a-c3797df5c6ae
