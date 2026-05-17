@@ -13,5 +13,8 @@ class MusicsController {
         return $llistaMusics;
     }
 
+    public function obtenirMusicPerId($id) {
+        return $this->musicsDao->obtenirMusicPerId($id);
+    }
 }
 ?>

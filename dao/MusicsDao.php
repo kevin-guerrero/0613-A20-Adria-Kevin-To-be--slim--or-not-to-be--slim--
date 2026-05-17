@@ -26,5 +26,14 @@ class MusicsDao {
 
         return $musics;
     }
+
+    public function obtenirMusicPerId($id) {
+        $stmt = $this->connection->prepare("SELECT * FROM grups WHERE grup_id = :id");
+        $stmt->bindValue(':id', (int)$id, SQLITE3_INTEGER);
+        $resultat = $stmt->execute();
+        $fila = $resultat->fetchArray(SQLITE3_ASSOC);
+        if (!$fila) return null;
+        return $this->formatMusics($fila);
+    }
 }
 ?>
